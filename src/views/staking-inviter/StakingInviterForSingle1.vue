@@ -72,14 +72,16 @@
                       :disabled="!(submitLoading && accountAssets.balance > 0)"
                       @click="
                         accountAssets.allowanceAmount &&
-                        accountAssets.allowanceAmount >= stakingAmount
+                        parseFloat(accountAssets.allowanceAmount) >=
+                          parseFloat(stakingAmount)
                           ? submit()
                           : handleApprove()
                       "
                     >
                       {{
                         accountAssets.allowanceAmount &&
-                        accountAssets.allowanceAmount >= stakingAmount
+                        parseFloat(accountAssets.allowanceAmount) >=
+                          parseFloat(stakingAmount)
                           ? $t("Staking")
                           : $t("Approve")
                       }}
