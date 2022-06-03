@@ -214,7 +214,7 @@ import {
 import { getContractByABI, weiToEther, etherToWei } from "@/utils/web3";
 // 引入合约 ABI 文件
 import ERC20DAO_ABI from "@/constants/contractJson/ERC20DAO_abi.json";
-import StakingInviter_ABI from "@/constants/contractJson/StakingInviter_abi.json";
+import StakingInviter_ABI from "@/constants/contractJson/StakingInviterHeco_abi.json";
 
 export default {
   name: "StakingInviterForSingle1",
@@ -479,7 +479,7 @@ export default {
     },
     // 跳转历史记录
     gotoHistory() {
-      this.$router.push({ path: "/staking/single/3/history" });
+      this.$router.push({ path: "/staking/single/1/history" });
     }
   }
 };

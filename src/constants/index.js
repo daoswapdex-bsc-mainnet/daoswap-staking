@@ -11,7 +11,7 @@ export const StakingInviterForLPContractAddress2 =
 export const StakingInviterForSingleTokenAddress1 =
   "0xc096332CAacF00319703558988aD03eC6586e704";
 export const StakingInviterForSingleContractAddress1 =
-  "0xa322bA6c0B8ce79F8EfC3CEc3EB827FD0ED7D84c";
+  "0x79d0330D83e3283cA50a0fC93377BDFBA031a916";
 
 /********** base **********/
 export const DAOAddress = "0xc096332CAacF00319703558988aD03eC6586e704";

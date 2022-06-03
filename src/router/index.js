@@ -4,8 +4,8 @@ import StakingInviterForLP1 from "../views/staking-inviter/StakingInviterForLP1.
 import StakingInviterForLPHistory1 from "../views/staking-inviter/StakingInviterForLPHistory1.vue";
 import StakingInviterForLP2 from "../views/staking-inviter/StakingInviterForLP2.vue";
 import StakingInviterForLPHistory2 from "../views/staking-inviter/StakingInviterForLPHistory2.vue";
-// import StakingInviterForSingle1 from "../views/staking-inviter/StakingInviterForSingle1.vue";
-// import StakingInviterForSingleHistory1 from "../views/staking-inviter/StakingInviterForSingleHistory1.vue";
+import StakingInviterForSingle1 from "../views/staking-inviter/StakingInviterForSingle1.vue";
+import StakingInviterForSingleHistory1 from "../views/staking-inviter/StakingInviterForSingleHistory1.vue";
 
 Vue.use(VueRouter);
 
@@ -53,25 +53,25 @@ const routes = [
                 component: StakingInviterForLPHistory1
               }
             ]
+          },
+          {
+            path: "/staking/single",
+            name: "StakingInviterForSingle",
+            redirect: "/staking/single/1",
+            component: () => import("@/layouts/home/ViewBlank.vue"),
+            children: [
+              {
+                path: "/staking/single/1",
+                name: "StakingInviterForSingle1",
+                component: StakingInviterForSingle1
+              },
+              {
+                path: "/staking/single/1/history",
+                name: "StakingInviterForSingle1History",
+                component: StakingInviterForSingleHistory1
+              }
+            ]
           }
-          // {
-          //   path: "/staking/single",
-          //   name: "StakingInviterForSingle",
-          //   redirect: "/staking/single/3",
-          //   component: () => import("@/layouts/home/ViewBlank.vue"),
-          //   children: [
-          //     {
-          //       path: "/staking/single/1",
-          //       name: "StakingInviterForSingle1",
-          //       component: StakingInviterForSingle1
-          //     },
-          //     {
-          //       path: "/staking/single/1/history",
-          //       name: "StakingInviterForSingle1History",
-          //       component: StakingInviterForSingleHistory1
-          //     }
-          //   ]
-          // }
         ]
       },
       {

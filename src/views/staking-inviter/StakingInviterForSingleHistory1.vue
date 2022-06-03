@@ -209,7 +209,7 @@ import { getContractByABI, weiToEther, toChecksumAddress } from "@/utils/web3";
 import { compare } from "@/filters/index";
 // 引入合约 ABI 文件
 import ERC20DAO_ABI from "@/constants/contractJson/ERC20DAO_abi.json";
-import StakingInviter_ABI from "@/constants/contractJson/StakingInviter_abi.json";
+import StakingInviter_ABI from "@/constants/contractJson/StakingInviterHeco_abi.json";
 import TokenVesting_ABI from "@/constants/contractJson/TokenVesting_abi.json";
 
 export default {
