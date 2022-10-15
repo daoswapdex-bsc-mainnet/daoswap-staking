@@ -18,6 +18,11 @@ export const StakingInviterForLPTokenAddress4 =
 export const StakingInviterForLPContractAddress4 =
   "0x739f5C2a5Ee387fFde600A72ed293431Bf7C6517";
 
+export const StakingInviterForLPTokenAddress5 =
+  "0x69217cF12bD760D6eA850A128646b21F7A61EE07";
+export const StakingInviterForLPContractAddress5 =
+  "0x271aFA5D75D2C090C8763FA29eeabaed94A7Bd16";
+
 export const StakingInviterForSingleTokenAddress1 =
   "0xc096332CAacF00319703558988aD03eC6586e704";
 export const StakingInviterForSingleContractAddress1 =
@@ -27,6 +32,10 @@ export const StakingInviterForSingleTokenAddress2 =
   "0xc096332CAacF00319703558988aD03eC6586e704";
 export const StakingInviterForSingleContractAddress2 =
   "0xd3F385210325830E4eb7C7f309FE63680461c539";
+
+// 邀请关系合约地址
+export const RelationshipContractAddress =
+  "0x890A071e53230733154ea3eFdF5D7CB3ae9dFA19";
 
 /********** base **********/
 export const DAOAddress = "0xc096332CAacF00319703558988aD03eC6586e704";

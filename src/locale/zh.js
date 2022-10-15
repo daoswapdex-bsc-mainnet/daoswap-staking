@@ -87,6 +87,8 @@ export default {
     "The amount does not meet the requirements": "质押额度不符合要求"
   },
   "Staking event has ended": "质押已结束",
+  "You have to accept invitation to be able to stake":
+    "你还未接受邀请授权，暂不可质押",
   "Staking History": "质押记录",
   "Staking Success": "质押成功",
   "Staking Amount": "质押额度",

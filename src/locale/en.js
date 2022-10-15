@@ -91,6 +91,8 @@ export default {
       "The amount does not meet the requirements"
   },
   "Staking event has ended": "Staking event has ended",
+  "You have to accept invitation to be able to stake":
+    "You have to accept invitation to be able to stake",
   "Staking History": "Staking History",
   "Staking Success": "Staking Success",
   "Staking Amount": "Staking Amount",
