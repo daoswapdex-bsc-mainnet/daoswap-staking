@@ -33,6 +33,11 @@ export const StakingInviterForSingleTokenAddress2 =
 export const StakingInviterForSingleContractAddress2 =
   "0xd3F385210325830E4eb7C7f309FE63680461c539";
 
+export const StakingInviterForSingleTokenAddress3 =
+  "0xc096332CAacF00319703558988aD03eC6586e704";
+export const StakingInviterForSingleContractAddress3 =
+  "0x5E554D8A076D10305bcB70F542b5B0D9551cB504";
+
 // 邀请关系合约地址
 export const RelationshipContractAddress =
   "0x890A071e53230733154ea3eFdF5D7CB3ae9dFA19";
