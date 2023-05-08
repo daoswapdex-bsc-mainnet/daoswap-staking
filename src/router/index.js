@@ -16,6 +16,8 @@ import StakingInviterForLP7 from "../views/staking-inviter/StakingInviterForLP7.
 import StakingInviterForLPHistory7 from "../views/staking-inviter/StakingInviterForLPHistory7.vue";
 import StakingInviterForLP8 from "../views/staking-inviter/StakingInviterForLP8.vue";
 import StakingInviterForLPHistory8 from "../views/staking-inviter/StakingInviterForLPHistory8.vue";
+import StakingInviterForLP9 from "../views/staking-inviter/StakingInviterForLP9.vue";
+import StakingInviterForLPHistory9 from "../views/staking-inviter/StakingInviterForLPHistory9.vue";
 import StakingInviterForSingle1 from "../views/staking-inviter/StakingInviterForSingle1.vue";
 import StakingInviterForSingleHistory1 from "../views/staking-inviter/StakingInviterForSingleHistory1.vue";
 import StakingInviterForSingle2 from "../views/staking-inviter/StakingInviterForSingle2.vue";
@@ -24,6 +26,8 @@ import StakingInviterForSingle3 from "../views/staking-inviter/StakingInviterFor
 import StakingInviterForSingleHistory3 from "../views/staking-inviter/StakingInviterForSingleHistory3.vue";
 import StakingInviterForSingle4 from "../views/staking-inviter/StakingInviterForSingle4.vue";
 import StakingInviterForSingleHistory4 from "../views/staking-inviter/StakingInviterForSingleHistory4.vue";
+import StakingInviterForSingle5 from "../views/staking-inviter/StakingInviterForSingle5.vue";
+import StakingInviterForSingleHistory5 from "../views/staking-inviter/StakingInviterForSingleHistory5.vue";
 
 Vue.use(VueRouter);
 
@@ -47,9 +51,19 @@ const routes = [
           {
             path: "/staking/lp",
             name: "StakingInviterForLP",
-            redirect: "/staking/lp/8",
+            redirect: "/staking/lp/9",
             component: () => import("@/layouts/home/ViewBlank.vue"),
             children: [
+              {
+                path: "/staking/lp/9",
+                name: "StakingInviterForLP9",
+                component: StakingInviterForLP9
+              },
+              {
+                path: "/staking/lp/9/history",
+                name: "StakingInviterForLP9History",
+                component: StakingInviterForLPHistory9
+              },
               {
                 path: "/staking/lp/8",
                 name: "StakingInviterForLP8",
@@ -135,9 +149,19 @@ const routes = [
           {
             path: "/staking/single",
             name: "StakingInviterForSingle",
-            redirect: "/staking/single/4",
+            redirect: "/staking/single/5",
             component: () => import("@/layouts/home/ViewBlank.vue"),
             children: [
+              {
+                path: "/staking/single/5",
+                name: "StakingInviterForSingle5",
+                component: StakingInviterForSingle5
+              },
+              {
+                path: "/staking/single/5/history",
+                name: "StakingInviterForSingle5History",
+                component: StakingInviterForSingleHistory5
+              },
               {
                 path: "/staking/single/4",
                 name: "StakingInviterForSingle4",
