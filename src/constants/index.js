@@ -43,6 +43,11 @@ export const StakingInviterForLPTokenAddress9 =
 export const StakingInviterForLPContractAddress9 =
   "0xe2931E97516BCd0a447bbF4594Da66f048B213B1";
 
+export const StakingInviterForLPTokenAddress10 =
+  "0x69217cF12bD760D6eA850A128646b21F7A61EE07";
+export const StakingInviterForLPContractAddress10 =
+  "0xf246606f83DFd8B221dad80A3304a02e07c500e3";
+
 export const StakingInviterForSingleTokenAddress1 =
   "0xc096332CAacF00319703558988aD03eC6586e704";
 export const StakingInviterForSingleContractAddress1 =
