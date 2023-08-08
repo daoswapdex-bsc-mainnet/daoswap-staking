@@ -32,6 +32,8 @@ import StakingInviterForSingle4 from "../views/staking-inviter/StakingInviterFor
 import StakingInviterForSingleHistory4 from "../views/staking-inviter/StakingInviterForSingleHistory4.vue";
 import StakingInviterForSingle5 from "../views/staking-inviter/StakingInviterForSingle5.vue";
 import StakingInviterForSingleHistory5 from "../views/staking-inviter/StakingInviterForSingleHistory5.vue";
+import StakingInviterForSingle6 from "../views/staking-inviter/StakingInviterForSingle6.vue";
+import StakingInviterForSingleHistory6 from "../views/staking-inviter/StakingInviterForSingleHistory6.vue";
 
 Vue.use(VueRouter);
 
@@ -173,9 +175,19 @@ const routes = [
           {
             path: "/staking/single",
             name: "StakingInviterForSingle",
-            redirect: "/staking/single/5",
+            redirect: "/staking/single/6",
             component: () => import("@/layouts/home/ViewBlank.vue"),
             children: [
+              {
+                path: "/staking/single/6",
+                name: "StakingInviterForSingle6",
+                component: StakingInviterForSingle6
+              },
+              {
+                path: "/staking/single/6/history",
+                name: "StakingInviterForSingle6History",
+                component: StakingInviterForSingleHistory6
+              },
               {
                 path: "/staking/single/5",
                 name: "StakingInviterForSingle5",
