@@ -22,6 +22,8 @@ import StakingInviterForLP10 from "../views/staking-inviter/StakingInviterForLP1
 import StakingInviterForLPHistory10 from "../views/staking-inviter/StakingInviterForLPHistory10.vue";
 import StakingInviterForLP11 from "../views/staking-inviter/StakingInviterForLP11.vue";
 import StakingInviterForLPHistory11 from "../views/staking-inviter/StakingInviterForLPHistory11.vue";
+import StakingInviterForLP12 from "../views/staking-inviter/StakingInviterForLP12.vue";
+import StakingInviterForLPHistory12 from "../views/staking-inviter/StakingInviterForLPHistory12.vue";
 import StakingInviterForSingle1 from "../views/staking-inviter/StakingInviterForSingle1.vue";
 import StakingInviterForSingleHistory1 from "../views/staking-inviter/StakingInviterForSingleHistory1.vue";
 import StakingInviterForSingle2 from "../views/staking-inviter/StakingInviterForSingle2.vue";
@@ -57,9 +59,19 @@ const routes = [
           {
             path: "/staking/lp",
             name: "StakingInviterForLP",
-            redirect: "/staking/lp/11",
+            redirect: "/staking/lp/12",
             component: () => import("@/layouts/home/ViewBlank.vue"),
             children: [
+              {
+                path: "/staking/lp/12",
+                name: "StakingInviterForLP12",
+                component: StakingInviterForLP12
+              },
+              {
+                path: "/staking/lp/12/history",
+                name: "StakingInviterForLP12History",
+                component: StakingInviterForLPHistory12
+              },
               {
                 path: "/staking/lp/11",
                 name: "StakingInviterForLP11",
